@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./main.js" defer></script>
-    <title>Document</title>
+    <title>Sorting Algo Visualizer</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Sorting Visualizer</h1>
-    <button class="btn">New Array</button>
+    <nav class="nav">
+        <div class="logo">Sorting Algo Visualizer</div>
+        <header class="container">
+            <div class="buttons">
+                <div><button class='btn primary-btn new-array' href="">New Array</button>
+                    <input id="arr_sz" type="range" min="5" max="60" step=1 value=20>
+                    <input id="speed_control" type="range" min="20" max="500" step=1 value=20>
+                </div>
+                <div><button class='btn primary-btn bubble-sort' href="">Bubble Sort</button>
+                    <button class='btn primary-btn selection-sort' href="">Selection Sort</button>
+                    <button class='btn primary-btn insertion-sort' href="">Insertion Sort</button>
+                </div>
+            </div>
+        </header>
+    </nav>
+    <div class="section-visuals">
+        <div class="container">
+            <div class="bars" id="bars"></div>
+        </div>
+    </div>
 </body>
+
 </html>
